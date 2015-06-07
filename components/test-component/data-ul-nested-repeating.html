@@ -1,18 +1,18 @@
 <html>
   <body>
-    <div>
-    <h2>Latest items</h2>
+    <h2>list nested data</h2>
     <ul>
-        <li>
-          <a data-sw-text="title" data-sw-href="sw/path" href="#">placeholder for title</a>
-          <br />
-          <div data-sw-text="description">placeholder for body</div>
-          <ul>
-            <li><a data-sw-href="title" href="#">some link 1</a></li>
-            <li><a data-sw-href="title" href="#">some link 2</a></li>
-          </ul>
-        </li>
+      <li>
+        <h3 data-sw-text="title">placeholder for title</h3>
+        <p data-sw-text="description">placeholder for body</p>
+        <ol>
+          <li>
+            <a data-sw-text="links.title" data-sw-href="links.href" href="#">
+              placeholder for link
+            </a>
+          </li>
+        </ol>
+      </li>
     </ul>
-  </div>
   </body>
 </html>

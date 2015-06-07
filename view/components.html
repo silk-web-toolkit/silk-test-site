@@ -1,51 +1,188 @@
 <html>
   <body>
-    <h2>test page</h2>
+    <h2>Components test page</h2>
+    <table border="0" cellspacing="2" cellpadding="2" width="100%">
+      <thead>
+        <tr><th>Silk Generated</th><th>Expected</th></tr>
+      </thead>
+      <tbody>
+        <tr valign="top">
+          <td>
+            <div data-sw-component="test-component/test-component">
+              Placeholder for test-component
+            </div>
+            <div>Test to see how many levels components can have</div>
+            <div data-sw-component="level-component/1">Error at level 1</div>
+            <div>Test to see what happens if a component calls itself</div>
+            <div data-sw-component="level-component/recursive">
+              Placeholder for recursive text
+            </div>
+            <div data-sw-component="test-component/data-li-non-nested" data-sw-source="items">
+              Placeholder for data-li-non-nested
+            </div>
+            <div data-sw-component="test-component/item-limit" data-sw-source="items" data-sw-limit="1">Placeholder for item-limit</div>
+            <div data-sw-component="test-component/data-li-nested" data-sw-source="items">
+              Placeholder for data-li-nested
+            </div>
+            <div data-sw-component="test-component/data-table" data-sw-source="items">
+              Placeholder for data-table
+            </div>
+            <div data-sw-component="test-component/data-tbody" data-sw-source="items">
+              Placeholder for data-tbody
+            </div>
+            <div data-sw-component="test-component/data-multi-singular-write" data-sw-source="items">
+              Placeholder for data-multi-singular-write
+            </div>
+            <div data-sw-component="test-component/data-ul-nested-repeating" data-sw-source="items">
+              Placeholder for data-ul-nested-repeating
+            </div>
+            <div data-sw-component="test-component/rich-repeating" data-sw-source="rich-items">
+              Placeholder for rich-repeating
+            </div>
+          </td>
+          <td>
+            <h2>test component</h2>
+            <p>test component content</p>
+            <div>Test to see how many levels components can have</div>
+            <div>Step 1<div>Step 2<div>Step 3<div>Step 4<div>Success Reached step 5 (final component)</div></div></div></div></div>
 
-    <div data-sw-component="test-component/test-component">
-      Placeholder for test-component
-    </div>
+            <div>Test to see what happens if a component calls itself</div>
+            <div>This component should not be allowed to call itself</div>
+            <div>Placeholder for recursive text</div>
+            <br/><br/><br/><br/>
+            <h2>list non-nested</h2>
+            <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+            </ul>
 
-    <div>Test to see how many levels components can have</div>
-    <div data-sw-component="level-component/1">
-      Error at level 1
-    </div>
+            <h2>limited items</h2>
+            <ul>
+              <li>item 1</li>
+            </ul>
 
-    <div>Test to see what happens if a component calls itself</div>
-    <div data-sw-component="level-component/recursive">
-      Placeholder for recursive text
-    </div>
+            <h2>list nested HTML</h2>
+            <ul>
+              <li>
+                <span class="file">item 1</span>
+                <div>
+                  <a href="items/item1.html">item 1</a>
+                </div>
+              </li>
+              <li>
+                <span class="file">item 2</span>
+                <div>
+                  <a href="items/item2.html">item 2</a>
+                </div>
+              </li>
+            </ul>
 
-    <div data-sw-component="test-component/data-li-non-nested" data-sw-source="items">
-      Placeholder for data-li-non-nested
-    </div>
+            <h2>data comp table</h2>
+            <table border="1" cellspacing="2" cellpadding="2">
+              <thead>
+                <tr>
+                  <th>Title 1</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <td>Sum 4</td>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>item 1</td>
+                </tr>
+                <tr>
+                  <td>item 2</td>
+                </tr>
+              </tbody>
+            </table>
 
-    <div data-sw-component="test-component/item-limit" data-sw-source="items" data-sw-limit="1">
-      Placeholder for item limited data-li-non-nested
-    </div>
+            <h2>data comp tbody</h2>
+            <table border="1" cellspacing="2" cellpadding="2">
+              <thead>
+                <tr>
+                  <th>Title 1</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <td>Sum 4</td>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>item 1</td>
+                </tr>
+                <tr>
+                  <td>item 2</td>
+                </tr>
+              </tbody>
+            </table>
 
-    <div data-sw-component="test-component/data-li-nested" data-sw-source="items">
-      Placeholder for data-li-nested
-    </div>
+            <h2>multi attr/val singular write</h2>
+            <p  class="file">item 1</p>
+            <h2>list nested data</h2>
+            <ul>
+              <li>
+                <h3>item 1</h3>
+                <p data-sw-text="description">Item 1 should have 1 link</p>
+                <ol>
+                  <li>
+                    <a href="http://www.silkyweb.com">Silk Home Page</a>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <h3>item 2</h3>
+                <p data-sw-text="description">Item 2 should have 4 links</p>
+                <ol>
+                  <li>
+                    <a href="http://silk-web-toolkit.github.io/blank-template/">
+                      Blank Template Example
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://silk-web-toolkit.github.io/sourced-component/">
+                      Sourced Component Example
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://silk-web-toolkit.github.io/tree-component/">
+                      Tree Component Example
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://silk-web-toolkit.github.io/blog/">
+                      Blog Example
+                    </a>
+                  </li>
+                </ol>
+              </li>
+            </ul>
 
-    <div data-sw-component="test-component/data-table" data-sw-source="items">
-      Placeholder for data-tr
-    </div>
-
-    <div data-sw-component="test-component/data-tbody" data-sw-source="items">
-      Placeholder for data-tr
-    </div>
-
-    <div data-sw-component="test-component/data-multi-singular-write" data-sw-source="items">
-      Placeholder for data-multi-singular-write
-    </div>
-
-    <div data-sw-component="test-component/data-ul-nested-repeating" data-sw-source="items">
-      Placeholder for data-ul-nested-repeating
-	  </div>
-
-    <div data-sw-component="test-component/rich-repeating" data-sw-source="rich-items">
-      Placeholder for rich-repeating
-    </div>
+            <h2>Rich field example</h2>
+            <ul>
+              <li>
+                <p>a rich content item</p>
+                <br/>
+                <div>blurby</div>
+                Summary:
+                <div>
+                  <p>a summary first paragraph</p>
+                  <p>a second paragraph with a <strong>bold</strong> item</p>
+                </div>
+                Body:
+                <div>
+                  <p>a first paragraph</p>
+                  <p>a second paragraph with a <strong>bold</strong> item</p>
+                </div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>

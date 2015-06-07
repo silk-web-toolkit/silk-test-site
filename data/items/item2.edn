@@ -1,1 +1,22 @@
-{:title "an item 2" :description "an item description 2"}
+{
+  :title "item 2"
+  :description "Item 2 should have 4 links"
+  :links [
+    {
+      :title "Blank Template Example"
+      :href "http://silk-web-toolkit.github.io/blank-template/"
+    }
+    {
+      :title "Sourced Component Example"
+      :href "http://silk-web-toolkit.github.io/sourced-component/"
+    }
+    {
+      :title "Tree Component Example"
+      :href "http://silk-web-toolkit.github.io/tree-component/"
+    }
+    {
+      :title "Blog Example"
+      :href "http://silk-web-toolkit.github.io/blog/"
+    }
+  ]
+}
