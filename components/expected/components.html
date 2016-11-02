@@ -1,0 +1,159 @@
+<html>
+  <body>
+    <h2>test component</h2>
+    <p>test component content</p>
+    <div>Test to see how many levels components can have</div>
+    <div>Step 1<div>Step 2<div>Step 3<div>Step 4<div>Success Reached step 5 (final component)</div></div></div></div></div>
+
+    <div>Test to see what happens if a component calls itself</div>
+    <div>Placeholder for recursive text</div>
+    <h2>list non-nested</h2>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+    </ul>
+
+    <h2>limited items</h2>
+    <ul>
+      <li>item 1</li>
+    </ul>
+
+    <h2>list nested HTML</h2>
+    <ul>
+      <li>
+        <span class="file">item 1</span>
+        <div>
+          <a href="items/item1.html">item 1</a>
+        </div>
+      </li>
+      <li>
+        <span class="file">item 2</span>
+        <div>
+          <a href="items/item2.html">item 2</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2>data comp table</h2>
+    <table border="1" cellspacing="2" cellpadding="2">
+      <thead>
+        <tr>
+          <th>Title 1</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td>Sum 4</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>item 1</td>
+        </tr>
+        <tr>
+          <td>item 2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>data comp tbody</h2>
+    <table border="1" cellspacing="2" cellpadding="2">
+      <thead>
+        <tr>
+          <th>Title 1</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td>Sum 4</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>item 1</td>
+        </tr>
+        <tr>
+          <td>item 2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>multi attr/val singular write</h2>
+    <p  class="file">item 1</p>
+
+    <h2>list nested data</h2>
+    <ul>
+      <li>
+        <h3>item 1</h3>
+        <p>Item 1 should have 1 link</p>
+        <ol>
+          <li>
+            <a href="http://www.silkyweb.org">Silk Home Page</a>
+            <ul>
+              <li><span>Silk content</span></li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <h3>item 2</h3>
+        <p>Item 2 should have 4 links</p>
+        <ol>
+          <li>
+            <a href="http://silk-web-toolkit.github.io/blank-template/">Blank Template Example</a>
+            <ul>
+              <li><span>Blank Template content 1</span></li>
+              <li><span>Blank Template content 2</span></li>
+            </ul>
+          </li>
+          <li>
+            <a href="http://silk-web-toolkit.github.io/sourced-component/">Sourced Component Example</a>
+            <ul>
+              <li><span>Sourced Component content 1</span></li>
+              <li><span>Sourced Component content 2</span></li>
+              <li><span>Sourced Component content 3</span></li>
+            </ul>
+          </li>
+          <li>
+            <a href="http://silk-web-toolkit.github.io/tree-component/">Tree Component Example</a>
+            <ul>
+              <li><span>Tree Component content 1</span></li>
+              <li><span>Tree Component content 2</span></li>
+              <li><span>Tree Component content 3</span></li>
+              <li><span>Tree Component content 4</span></li>
+            </ul>
+          </li>
+          <li>
+            <a href="http://silk-web-toolkit.github.io/blog/">Blog Example</a>
+            <ul>
+              <li><span>Blog Example content 1</span></li>
+              <li><span>Blog Example content 2</span></li>
+              <li><span>Blog Example content 3</span></li>
+              <li><span>Blog Example content 4</span></li>
+              <li><span>Blog Example content 5</span></li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+    </ul>
+
+    <h2>Rich field example</h2>
+    <ul>
+      <li>
+        <p>a rich content item</p>
+        <br/>
+        <div>blurby</div>
+        Summary:
+        <div>
+          <p>a summary first paragraph</p>
+          <p>a second paragraph with a <strong>bold</strong> item</p>
+        </div>
+        Body:
+        <div>
+          <p>a first paragraph</p>
+          <p>a second paragraph with a <strong>bold</strong> item</p>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
