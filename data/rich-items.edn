@@ -1,0 +1,4 @@
+{:title "a rich content item"
+ :description "blurby"
+ :summary-html "%3Cp%3Ea%20summary%20first%20paragraph%3C/p%3E%0A%3Cp%3Ea%20second%20paragraph%20with%20a%20%3Cstrong%3Ebold%3C/strong%3E%20item%3C/p%3E"
+ :body-html "%3Cp%3Ea%20first%20paragraph%3C/p%3E%0A%3Cp%3Ea%20second%20paragraph%20with%20a%20%3Cstrong%3Ebold%3C/strong%3E%20item%3C/p%3E"}
