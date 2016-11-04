@@ -24,7 +24,7 @@
       :href "http://silk-web-toolkit.github.io/tree-component/"
       :contents [
         {:description "Tree Component content 1"}
-        {:description "Tree Component content 2"}
+        {:description "Tree Component content 2" :subs [{:node "Im a sub node"}]}
         {:description "Tree Component content 3"}
         {:description "Tree Component content 4"}
       ]
