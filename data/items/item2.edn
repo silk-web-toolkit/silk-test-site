@@ -6,38 +6,38 @@
       :title "Blank Template Example"
       :href "http://silk-web-toolkit.github.io/blank-template/"
       :contents [
-        {:description "Blank Template content 1"}
-        {:description "Blank Template content 2"}
+        {:description "content 1"}
+        {:description "content 2"}
       ]
     }
     {
       :title "Sourced Component Example"
       :href "http://silk-web-toolkit.github.io/sourced-component/"
       :contents [
-        {:description "Sourced Component content 1"}
-        {:description "Sourced Component content 2"}
-        {:description "Sourced Component content 3"}
+        {:description "content 1"}
+        {:description "content 2"}
+        {:description "content 3"}
       ]
     }
     {
       :title "Tree Component Example"
       :href "http://silk-web-toolkit.github.io/tree-component/"
       :contents [
-        {:description "Tree Component content 1"}
-        {:description "Tree Component content 2" :subs [{:node "Im a sub node"}]}
-        {:description "Tree Component content 3"}
-        {:description "Tree Component content 4"}
+        {:description "content 1"}
+        {:description "content 2" :subs [{:node "Im a sub node"}]}
+        {:description "content 3"}
+        {:description "content 4"}
       ]
     }
     {
       :title "Blog Example"
       :href "http://silk-web-toolkit.github.io/blog/"
       :contents [
-        {:description "Blog Example content 1"}
-        {:description "Blog Example content 2"}
-        {:description "Blog Example content 3"}
-        {:description "Blog Example content 4"}
-        {:description "Blog Example content 5"}
+        {:description "content 1"}
+        {:description "content 2"}
+        {:description "content 3"}
+        {:description "content 4"}
+        {:description "content 5"}
       ]
     }
   ]
