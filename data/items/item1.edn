@@ -6,7 +6,7 @@
       :title "Silk Home Page"
       :href "http://www.silkyweb.org"
       :contents [
-        {:description "Silk content"}
+        {:description "content 1"}
       ]
     }
   ]
