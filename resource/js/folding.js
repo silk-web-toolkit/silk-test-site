@@ -2,17 +2,17 @@
 $(document).ready(function() {
   $('li.folder').addClass('plusimageapply');
   $('li.folder').children().addClass('selectedimage');
-  $('li.folder').children().hide();
+  $('li.folder').children('ul').hide();
   $('li.folder').each(
     function(column) {
-      $(this).click(function(event){
+      $(this).click(function(event) {
         if (this == event.target) {
           if($(this).is('.plusimageapply')) {
-            $(this).children().show();
+            $(this).children('ul').show();
             $(this).removeClass('plusimageapply');
             $(this).addClass('minusimageapply');
           } else {
-            $(this).children().hide();
+            $(this).children('ul').hide();
             $(this).removeClass('minusimageapply');
             $(this).addClass('plusimageapply');
           }
